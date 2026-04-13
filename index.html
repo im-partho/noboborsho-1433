@@ -1,0 +1,93 @@
+<!DOCTYPE html><html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shubho Noboborsho 1433</title>  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Bengali:wght@400;700&display=swap" rel="stylesheet">  <style>
+    body {
+      margin: 0;
+      font-family: 'Noto Serif Bengali', serif;
+      background: linear-gradient(135deg, #fff5f5, #ffe6e6);
+      text-align: center;
+      color: #5a0f0f;
+    }
+
+    .container { padding: 20px; }
+
+    h1 { color: #b30000; }
+
+    .poster {
+      background: white;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+      max-width: 500px;
+      margin: auto;
+    }
+
+    .poster img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 10px;
+    }
+
+    input { margin-top: 10px; }
+
+    .letter {
+      margin-top: 15px;
+      font-size: 16px;
+      line-height: 1.7;
+    }
+
+    .buttons {
+      margin-top: 20px;
+      position: relative;
+      height: 100px;
+    }
+
+    button {
+      padding: 10px 20px;
+      border-radius: 10px;
+      border: none;
+      cursor: pointer;
+      font-size: 15px;
+      transition: 0.3s;
+    }
+
+    .yes-btn { background: #ff4d4d; color: white; }
+    .no-btn { background: #ddd; position: absolute; }
+
+  </style></head><body><div class="container">
+  <h1>🌸 শুভ নববর্ষ ১৪৩৩ 🌸</h1>  <div class="poster">
+    <img id="posterImg" src="https://via.placeholder.com/500x250?text=Your+Poster">
+    <input type="file" accept="image/*" onchange="loadPoster(event)"><div class="letter">
+  প্রিয় Saptarshee, <br><br>
+  এই নতুন বছরে একটা কথা বলতে চাই...<br>
+  তুমি আমার কাছে অনেক স্পেশাল 💖<br><br>
+  তুমি কি আমার এই অনুভূতিটা বুঝতে পারো? 🙂
+</div>
+
+<div class="buttons">
+  <button class="yes-btn" onclick="sayYes()">🙂 Yes</button>
+  <button class="no-btn" id="noBtn">No 😅</button>
+</div>
+
+  </div>
+</div><script>
+
+function sayYes(){
+  window.location.href = "https://wa.me/8801XXXXXXXXX?text=Yes%20🙂";
+}
+
+const noBtn = document.getElementById("noBtn");
+
+noBtn.addEventListener("mouseover", () => {
+  noBtn.style.top = Math.random() * 70 + "px";
+  noBtn.style.left = Math.random() * 200 + "px";
+});
+
+function loadPoster(e){
+  document.getElementById('posterImg').src = URL.createObjectURL(e.target.files[0]);
+}
+
+</script></body>
+</html>
