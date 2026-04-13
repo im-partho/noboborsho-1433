@@ -58,8 +58,7 @@
 
   </style></head><body><div class="container">
   <h1>🌸 শুভ নববর্ষ ১৪৩৩ 🌸</h1>  <div class="poster">
-    <img id="posterImg" src="https://via.placeholder.com/500x250?text=Your+Poster">
-    <input type="file" accept="image/*" onchange="loadPoster(event)"><div class="letter">
+    <img id="posterImg" src="https://via.placeholder.com/500x250?text=Your+Poster"><div class="letter">
   প্রিয় Saptarshee, <br><br>
   এই নতুন বছরে একটা কথা বলতে চাই...<br>
   তুমি আমার কাছে অনেক স্পেশাল 💖<br><br>
@@ -85,9 +84,7 @@ noBtn.addEventListener("mouseover", () => {
   noBtn.style.left = Math.random() * 200 + "px";
 });
 
-function loadPoster(e){
-  document.getElementById('posterImg').src = URL.createObjectURL(e.target.files[0]);
-}
+// Poster is now fixed. Replace image URL in HTML if needed.
 
 </script></body>
 </html>
